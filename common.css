@@ -5,17 +5,14 @@
 
 :root {
     font-family: Inter, Helvetica, Arial;
-    --red: #c95734;
-    --green: #92bf43;
-    --blue: #5862eb;
+    --red: hsl(25deg 70% 60%);
+    --green: hsl(85deg 70% 60%);
+    --blue: hsl(220deg 70% 60%);
 }
 
 section.top {
-    background: 
-        radial-gradient(at 90% 0%, var(--red) 20%, transparent 70%),
-        radial-gradient(farthest-corner at 75% 100%, var(--blue) 20%, transparent 60%),
-        radial-gradient(farthest-corner at 0% 50%, var(--green), transparent 200%)
-        ;
+    background-image: url("./background.png");
+    background-size: cover;
     color: white;
     padding-left: 10%;
 }
