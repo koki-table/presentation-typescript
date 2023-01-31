@@ -1,0 +1,34 @@
+/* @theme common */
+
+@import "default";
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+
+:root {
+    font-family: Inter, Helvetica, Arial;
+    --red: #c95734;
+    --green: #92bf43;
+    --blue: #5862eb;
+}
+
+section.top {
+    background: 
+        radial-gradient(at 90% 0%, var(--red) 20%, transparent 70%),
+        radial-gradient(farthest-corner at 75% 100%, var(--blue) 20%, transparent 60%),
+        radial-gradient(farthest-corner at 0% 50%, var(--green), transparent 200%)
+        ;
+    color: white;
+    padding-left: 10%;
+}
+section.top::after {
+    color: white;
+}
+section.top footer {
+    color: white;
+}
+
+section.body footer {
+    background: linear-gradient(90deg, var(--green), var(--red) 30%, var(--blue));
+    background: -webkit-linear-gradient(0deg, var(--green), var(--red) 30%, var(--blue));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
